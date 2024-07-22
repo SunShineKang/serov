@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트연습06</title>
+    <link rel="stylesheet" href="css/스크립트연습06.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+
+
+
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+
+            });
+
+
+            $('.btn1').mouseover(function () {
+
+                $('.image .bg1').fadeIn(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeOut(500);
+
+
+
+
+                $(this).css({
+                    'background-color': 'yellow',
+                    'border-radius': '0 0 20px 0',
+                    'border': '1px solid #000'
+                });
+
+
+            });
+            $('.btn2').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeIn(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeOut(500);
+
+
+
+                $(this).css({
+                    'background-color': 'green',
+                    'border-radius': '20px 0 0 0',
+                    'border': '1px solid #000',
+
+
+                });
+            });
+            $('.btn3').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeIn(500);
+                $('.image .bg4').fadeOut(500);
+                $(this).css({
+                    'background-color': 'yellow',
+                    'border-radius': '0 20px 0 0',
+                    'border': '1px solid #000'
+                });
+            });
+            $('.btn4').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeIn(500);
+                $(this).css({
+                    'background-color': 'green',
+                    'border-radius': '0 0 0 20px ',
+                    'border': '1px solid #000'
+                });
+            });
+
+            $('.cont02 li').mouseleave(function () {
+
+
+
+
+                $('.cont02 li').css({
+
+
+                    'background-color': 'rgb(189, 189, 189)',
+                    'border-radius': '0',
+                    'border': '0'
+                });
+
+
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header header">
+        <div class="inner">
+            <figure>
+                <img src="img/Group 1가람로고.png" alt="로고이미지">
+            </figure>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">기업소개</a></li>
+                </ul>
+
+
+
+
+            </nav> <!-- nav end -->
+
+        </div> <!-- inner end -->
+
+
+    </div> <!-- header end -->
+
+    <section class="section01">
+        <div class="inner">
+            <div class="item01">
+                <h4>Always <br>
+
+                    Transforming<h4>
+
+                        <div class="mini_cont">
+                            <div class="cont01">
+                                <span>NEWS SEROVI</span>
+                            </div>
+                            <div class="cont02">
+                                <ul>
+                                    <li class="btn1"></li>
+                                    <li class="btn2"></li>
+                                    <li class="btn3"></li>
+                                    <li class="btn4"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="image">
+                            <img class="bg1" src="img/악세사리-1.jpg" alt="이미지">
+                            <img class="bg2" src="img/악세사리-2.jpg" alt="이미지">
+                            <img class="bg3" src="img/악세사리-3.jpg" alt="이미지">
+                            <img class="bg4" src="img/악세사리-4.jpg" alt="이미지">
+
+                        </figure>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/악세사리1.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리2.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리3.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리4.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리5.jpg" alt="이미지"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section02">
+        <div class="wrap">
+            <div class="text">
+                <h5>SEROVI <br> COMMUNICATION</h5>
+
+                <strong>THIS PLACE THAT IS ALWAYS COMFORTABLE</strong> <br>
+                <button><a href="#">바로가기</a></button>
+            </div>
+
+            <div class="image01"><img src="img/2page-1.jpg" alt="이미지"></div>
+            <div class="image02"><img src="img/2page-2.jpg" alt="이미지"></div>
+            <div class="image03"><img src="img/2page-3.jpg" alt="이미지"></div>
+            <div class="image04"><img src="img/2page-4.jpg" alt="이미지"></div>
+            <div class="image05"><img src="img/2page-5.jpg" alt="이미지"></div>
+        </div> <!-- wrap end -->
+    </section> <!-- secrion02 end -->
+
+    <section class="section03">
+        <div class="item_wrap">
+            <div class="item01">
+                <span>세로비 철학</span>
+                <h2>휴식이 능률을 올린다</h2>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Dignissimos necessitatibus <br> hic
+                    nemo sit impedit recusandae eaque labore, <br> soluta eligendi quisquam tempora <br> reiciendis sed
+                    voluptas. <br> Iure doloribus impedit quae fugiat quasi.</p>
+                <button>자세히보기</button>
+            </div> <!-- item01 end -->
+            <div class="item02">
+                <figure>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/tXM_1Zam5nY?si=iad8FniZZ9E3NzJp&autoplay=1&mute=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </div> <!-- item_wrap end -->
+    </section> <!-- section03 end -->
+
+    <section class="section04">
+        <div class="title">
+            <div class="text">
+                <h4><span>매력적이고 감각있는</span> <br> 공간을 창조합니다.</h4>
+            </div>
+            <button>더보기 +</button>
+        </div> <!-- title end -->
+        <div class="image_wrap">
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사2.jpg" alt=""></div>
+                <div><h5>도면설계</h5></div>
+            </div> <!-- image_cont end -->
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사1.jpg" alt=""></div>
+                <div><h5>기존 현장 철거</h5></div>
+            </div> <!-- image_cont end -->
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사3.jpg" alt=""></div>
+                <div><h5>세로이의 편안한 휴식공간</h5></div>
+            </div> <!-- image_cont end -->
+            
+        </div> <!-- image_wrap -->
+        
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
